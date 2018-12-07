@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Seas-Nve, Watts</Authors>
+    <Description>Basic dependency injection for Azure functions V2</Description>
+    <Title>Watts.Shared.Functions.DependencyInjection</Title>
+    <PackageIconUrl>https://enfor.dk/wp-content/uploads/2017/05/SEAS-NVE.jpg</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/Watts-Energy/Watts.Shared.Functions.DependencyInjection</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Watts-Energy/Watts.Shared.Functions.DependencyInjection</RepositoryUrl>
+    <PackageTags>azure;azure-functions;dependencies;dependency-injection</PackageTags>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
