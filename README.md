@@ -31,7 +31,6 @@ For Autofac implementation can be the following
      public IServiceProvider CurrentFor(IConfiguration configuration)
      {
          var builder = new ContainerBuilder();
-         builder.RegisterModule(new ConfigurationModule(configuration));
          builder.RegisterModule(new PersistenceModule(configuration));
          return new AutofacServiceProvider(builder.Build());
      }
