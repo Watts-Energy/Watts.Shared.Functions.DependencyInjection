@@ -2,7 +2,7 @@
 Basic dependency injection for Azure functions V2
 
 ## About
-This is basic dependency injection library we are using in our projects for Azure Functions V2.
+This is basic dependency injection library we are using in our projects for Azure Functions V2. Available as [nuget](https://www.nuget.org/packages/Watts.Shared.Functions.DependencyInjection)
 
 # Usage
 First of all you have to declare ```Startup``` class for your azure function
