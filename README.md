@@ -71,4 +71,5 @@ public static async Task Integrate(
         {...}
 ```
 
-
+# Azure
+When you are deploying your function into Azure environment you will encountered issue that ```extensions.json``` is not created properly. The issue is discussed [here](https://github.com/Azure/azure-functions-host/issues/3386#issuecomment-419565714). To solve that we are using custom build targets, which will be included into your project with the nuget.
