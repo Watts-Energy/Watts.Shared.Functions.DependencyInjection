@@ -42,13 +42,16 @@ For Autofac implementation can be the following
 ```
 public class PersistenceModule
 {
+   private readonly IConfiguration _configuration;
+   
    public PersistenceModule(IConfiguration configuration)
    {
+      _configuration = configuration;
    }
 
    protected override void Load(ContainerBuilder builder)
    {
-      builder.Register(c => new DatabaseContext(Configuration["DatabaseConnection"]));
+      builder.Register(c => new DatabaseContext(_configuration["DatabaseConnection"]));
 
       builder.RegisterAssemblyTypes(typeof(StorageRepository<,>).Assembly)
 		        .Where(t => t.Name.EndsWith("Repository") && !t.IsAbstract)
